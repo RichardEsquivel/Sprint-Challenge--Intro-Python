@@ -17,3 +17,8 @@
 #     pass
 #
 # Put a comment noting which class is the base class
+
+
+# Establish parent class(base, superclass) and appropriate child(derived, subclasses)
+
+# Vehicle is the base class
