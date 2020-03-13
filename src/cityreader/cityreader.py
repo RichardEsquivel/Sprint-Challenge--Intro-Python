@@ -44,7 +44,7 @@ def cityreader(cities=[]):
 
     with open('cities.csv') as csvfile:
         cities_file = csv.reader(csvfile)
-        header = next(cities_file)
+        next(cities_file)
         for entry in cities_file:
             cities.append(City(entry[0], float(entry[3]), float(entry[4])))
     return cities
