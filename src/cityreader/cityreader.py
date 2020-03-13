@@ -28,7 +28,7 @@ class City:
 # Provide dunder string method to have formatted printable representation of string
 # for class City
     def __str__(self):
-        return f"{self.name}, {self.lat, {self.lon}"
+        return f"{self.name}, {self.lat}, {self.lon}"
 
 
 # intialize cities with an empty list
@@ -43,10 +43,10 @@ def cityreader(cities=[]):
     # utilize default csv python reader functionality with open
 
     with open('cities.csv') as csvfile:
-		    cities_file = csv.reader(csvfile)
-		    header = next(cities_file)
+        cities_file = csv.reader(csvfile)
+        header = next(cities_file)
         for entry in cities_file:
-            cities.append(City(entry[0], float[entry[3], float(entry)[4]]))
+            cities.append(City(entry[0], float(entry[3]), float(entry[4])))
     return cities
 
 
